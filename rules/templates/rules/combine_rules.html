@@ -1,0 +1,7 @@
+<h1>Combine Rules</h1>
+<form method="POST">
+  {{msg}}
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Combine Rules</button>
+</form>

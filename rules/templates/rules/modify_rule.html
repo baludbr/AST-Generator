@@ -1,0 +1,7 @@
+<h1>Modify Rule</h1>
+<form method="POST">
+  {{msg}}
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Modify Rule</button>
+</form>

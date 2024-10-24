@@ -1,0 +1,10 @@
+<h1>Create Rule</h1>
+<form method="POST">
+  {{msg}}
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Create Rule</button>
+</form>
+<a href="{% url 'main_page' %}"><button type="button">Back to Main Page</button></a>
+<a href="{% url 'show_all_rules' %}"><button type="button">All Rules</button></a>
+
